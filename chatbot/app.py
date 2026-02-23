@@ -277,7 +277,7 @@ def simple_query(question):
             try:
                 matches = graph.query(cypher_query, params={"keyword": keyword})
                 results.extend(matches)
-            except:
+            except Exception:
                 pass
     
     if results:

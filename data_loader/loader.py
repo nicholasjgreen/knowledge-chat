@@ -54,36 +54,27 @@ def load_sample_data():
         queries = [
             # Python language facts
             """
-            CREATE (python:Language {name: 'Python', type: 'Programming Language', 
-                    created: 1991, creator: 'Guido van Rossum'})
+            CREATE (python:Language {name: 'Python', type: 'Programming Language', created: 1991, creator: 'Guido van Rossum'})
             """,
             
             # Popular frameworks
             """
-            CREATE (django:Framework {name: 'Django', type: 'Web Framework', 
-                    description: 'High-level Python web framework'})
-            CREATE (flask:Framework {name: 'Flask', type: 'Web Framework', 
-                    description: 'Lightweight Python web framework'})
-            CREATE (fastapi:Framework {name: 'FastAPI', type: 'Web Framework', 
-                    description: 'Modern, fast web framework for APIs'})
+            CREATE (django:Framework {name: 'Django', type: 'Web Framework', description: 'High-level Python web framework'})
+            CREATE (flask:Framework {name: 'Flask', type: 'Web Framework', description: 'Lightweight Python web framework'})
+            CREATE (fastapi:Framework {name: 'FastAPI', type: 'Web Framework', description: 'Modern, fast web framework for APIs'})
             """,
             
             # AI/ML libraries
             """
-            CREATE (langchain:Library {name: 'LangChain', type: 'AI Library', 
-                    description: 'Framework for developing LLM applications'})
-            CREATE (pytorch:Library {name: 'PyTorch', type: 'ML Library', 
-                    description: 'Machine learning framework'})
-            CREATE (tensorflow:Library {name: 'TensorFlow', type: 'ML Library', 
-                    description: 'Machine learning framework'})
+            CREATE (langchain:Library {name: 'LangChain', type: 'AI Library', description: 'Framework for developing LLM applications'})
+            CREATE (pytorch:Library {name: 'PyTorch', type: 'ML Library', description: 'Machine learning framework'})
+            CREATE (tensorflow:Library {name: 'TensorFlow', type: 'ML Library', description: 'Machine learning framework'})
             """,
             
             # Data science tools
             """
-            CREATE (pandas:Library {name: 'Pandas', type: 'Data Library', 
-                    description: 'Data manipulation and analysis'})
-            CREATE (numpy:Library {name: 'NumPy', type: 'Data Library', 
-                    description: 'Numerical computing'})
+            CREATE (pandas:Library {name: 'Pandas', type: 'Data Library', description: 'Data manipulation and analysis'})
+            CREATE (numpy:Library {name: 'NumPy', type: 'Data Library', description: 'Numerical computing'})
             """,
             
             # Create relationships
@@ -113,12 +104,9 @@ def load_sample_data():
             
             # Add some use cases
             """
-            CREATE (webapp:UseCase {name: 'Web Application', 
-                    description: 'Building web applications and APIs'})
-            CREATE (ai:UseCase {name: 'AI/ML Development', 
-                    description: 'Building AI and machine learning applications'})
-            CREATE (data:UseCase {name: 'Data Analysis', 
-                    description: 'Analyzing and processing data'})
+            CREATE (webapp:UseCase {name: 'Web Application', description: 'Building web applications and APIs'})
+            CREATE (ai:UseCase {name: 'AI/ML Development', description: 'Building AI and machine learning applications'})
+            CREATE (data:UseCase {name: 'Data Analysis', description: 'Analyzing and processing data'})
             """,
             
             """
