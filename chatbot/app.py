@@ -310,4 +310,6 @@ if __name__ == '__main__':
     print("Starting Knowledge Chat Bot...")
     print(f"Neo4j URI: {NEO4J_URI}")
     print(f"OpenAI configured: {bool(qa_chain)}")
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    # Get debug mode from environment, default to False for production safety
+    debug_mode = os.getenv("FLASK_DEBUG", "False").lower() in ("true", "1", "yes")
+    app.run(host='0.0.0.0', port=8000, debug=debug_mode)
